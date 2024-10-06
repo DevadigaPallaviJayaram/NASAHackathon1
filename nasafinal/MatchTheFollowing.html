@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Match the Following</title>
+    <style>
+        h1 {
+            color: white;
+        }
+        body {font-family: Arial, sans-serif;
+            background-image: url('m.png'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px;
+        }
+        .column {
+            width: 40%;
+        }
+        .item {
+            margin: 10px 0;
+            padding: 10px;
+            border: 2px solid #ff8800;
+            border-radius: 5px;
+            background-color: #f6f47b;
+            cursor: grab;
+        }
+        .item.dragging {
+            opacity: 0.5;
+        }
+        .dropzone {
+            border: 2px dashed #0026ff;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #8af3f8;
+        }
+        .correct {
+            background-color: #a8f7ab;
+        }
+        .incorrect {
+            background-color: #f9adb5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Match the Following</h1>
+    <div class="container">
+        <div class="column">
+            <div class="item" draggable="true" id="item1">51 Pegasi b</div>
+            <div class="item" draggable="true" id="item2">KELT-9b</div>
+            <div class="item" draggable="true" id="item3">HIP 67522</div>
+            <div class="item" draggable="true" id="item1">GJ 3470b</div>
+            <div class="item" draggable="true" id="item2">K2-131b</div>
+            <div class="item" draggable="true" id="item3">OGLE-2013-BLG-0341b</div>
+        </div>
+        <div class="column">
+            <div class="dropzone" id="match1">Dimidium</div>
+            <div class="dropzone" id="match2">Hottest Gas Giant</div>
+            <div class="dropzone" id="match3">About the size of Jupiter</div>
+            <div class="dropzone" id="match1"> 35% of its atmosphere</div>
+            <div class="dropzone" id="match2">Completes a full orbit in 9 hoursLost</div>
+            <div class="dropzone" id="match3">Twice as far as Neptune from Sun</div>
+        </div>
+    </div>
+    <button onclick="checkAnswers()">Check Answers</button>
+    <p id="result"></p>
+
+    <script>
+        const items = document.querySelectorAll('.item');
+        const dropzones = document.querySelectorAll('.dropzone');
+
+        items.forEach(item => {
+            item.addEventListener('dragstart', () => {
+                item.classList.add('dragging');
+            });
+
+            item.addEventListener('dragend', () => {
+                item.classList.remove('dragging');
+            });
+        });
+
+        dropzones.forEach(dropzone => {
+            dropzone.addEventListener('dragover', e => {
+                e.preventDefault();
+                const draggingItem = document.querySelector('.dragging');
+                dropzone.appendChild(draggingItem);
+            });
+        });
+
+        function checkAnswers() {
+            const correctMatches = {
+                item1: 'match1',
+                item2: 'match2',
+                item3: 'match3'
+            };
+
+            let correct = true;
+
+            items.forEach(item => {
+                const dropzone = item.parentElement;
+                if (dropzone.id === correctMatches[item.id]) {
+                    dropzone.classList.add('correct');
+                    dropzone.classList.remove('incorrect');
+                } else {
+                    dropzone.classList.add('incorrect');
+                    dropzone.classList.remove('correct');
+                    correct = false;
+                }
+            });
+
+            const result = document.getElementById('result');
+            if (correct) {
+                result.textContent = 'All matches are correct! Great job!';
+            } else {
+                result.textContent = 'Some matches are incorrect. Try again!';
+            }
+        }
+    </script>
+</body>
+</html>

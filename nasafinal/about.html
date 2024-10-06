@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - Exoplanet Exploration</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Exoplanet Exploration</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="index.html#modules">Modules</a></li>
+          <li><a href="links.html">Links-NASA</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <button id="login-btn">Login</button>
+        <button id="logout-btn" style="display: none;">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="content">
+      <h2>What are Exoplanets?</h2>
+      <p>Exoplanets are planets that orbit stars outside our solar system. These distant worlds come in many forms, from giant gas planets larger than Jupiter to rocky worlds like Earth. Some exoplanets orbit their stars so closely that they are much hotter than any planet in our solar system.</p>
+    </div>
+    <div class="image-container">
+      <img src="exoplanet.png" alt="Exoplanet image" class="about-image">
+    </div>
+  </section>
+
+  <!-- Discovery Section -->
+  <section id="discovery" class="discovery-section">
+    <div class="container">
+      <h2>How Are Exoplanets Discovered?</h2>
+      <div class="discovery-content">
+        <p>Most exoplanets are found by observing the light of stars. When a planet crosses in front of its star, there is a tiny dip in brightness, called a transit. The most successful method for discovering exoplanets has been through space telescopes such as Kepler and TESS.</p>
+        <div class="mission-stats">
+          <div class="stat">
+            <i class="fas fa-rocket"></i>
+            <h3>5000+</h3>
+            <p>Exoplanets Discovered</p>
+          </div>
+          <div class="stat">
+            <i class="fas fa-star"></i>
+            <h3>3000+</h3>
+            <p>Stars Observed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Missions Section -->
+  <section id="missions" class="missions-section">
+    <div class="content">
+      <h2>Space Missions to Explore Exoplanets</h2>
+      <p>Several groundbreaking missions, like NASA’s Kepler and TESS telescopes, have revolutionized our understanding of exoplanets. These missions have discovered thousands of exoplanets, helping scientists determine which planets might be capable of hosting life.</p>
+      <div class="mission-images">
+        <div class="mission">
+          <img src="kepler.png" alt="Kepler Mission">
+          <h3>Kepler</h3>
+        </div>
+        <div class="mission">
+          <img src="tess.png" alt="TESS Mission">
+          <h3>TESS</h3>
+        </div>
+        <div class="mission">
+          <img src="james.png" alt="James Webb Space Telescope">
+          <h3>James Webb</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Exoplanet Exploration. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Login Modal -->
+<div id="login-modal" class="modal hidden">
+  <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <h2>Login</h2>
+      <form id="login-form">
+          <div class="form-group">
+              <label for="username">Username</label>
+              <div class="input-wrapper">
+                  <i class="fas fa-user"></i>
+                  <input type="text" id="username" name="username" placeholder="Enter your username" required>
+              </div>
+          </div>
+
+          <div class="form-group">
+              <label for="password">Password</label>
+              <div class="input-wrapper">
+                  <i class="fas fa-lock"></i>
+                  <input type="password" id="password" name="password" placeholder="Enter your password" required>
+              </div>
+          </div>
+
+          <button type="submit" class="login-button">Login</button>
+      </form>
+  </div>
+</div>
+

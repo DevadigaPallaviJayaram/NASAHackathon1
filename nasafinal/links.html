@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links - Exoplanet Explorer</title>
+    <link rel="stylesheet" href="style.css"> <!-- Ensure this path is correct -->
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Exoplanet Explorer</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modules.html">Modules</a></li>
+                    <li><a href="about.html">About</a></li>
+
+
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="links-section">
+            <h2>Useful Links</h2>
+            <div class="links-container">
+                <!-- NASA Main Page Link -->
+                <div class="link-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3><a href="https://www.nasa.gov" target="_blank" rel="noopener noreferrer">NASA Home</a></h3>
+                    <p>A website maintained by NASA dedicated to the exploration and study of exoplanets. This website
+                        serves as a hub for information and resources related to exoplanet research conducted by NASA
+                        and its partners. It provides access to a wealth of data, images, news articles, educational
+                        materials, and interactive features aimed at both scientists and the public interested in
+                        learning more about exoplanets and the search for life beyond our solar system.</p>
+                </div>
+                <br>
+                <!-- NASA Exoplanet Exploration Program Link -->
+                <div class="link-card">
+                    <i class="fas fa-globe"></i>
+                    <h3><a href="https://exoplanets.nasa.gov" target="_blank" rel="noopener noreferrer">NASA Exoplanet
+                            Exploration</a></h3>
+                    <p>Explore NASA's Exoplanet Exploration program and discover more about planets beyond our solar
+                        system.</p>
+                </div>
+                <br>
+                <!-- Eyes on Exoplanet -->
+                <div class="link-card">
+                    <i class="fas fa-globe"></i>
+                    <h3><a href="https://eyes.nasa.gov/apps/exo/#/" target="_blank" rel="noopener noreferrer">NASA
+                            Eyes on Exoplanet </a></h3>
+                    <p>This interactive website allows people to visually explore the distribution of exoplanetary systems in three-dimensional space, view where the exoplanets are in our galaxy, learn what kinds of stars they orbit, and more.</p>
+                </div>
+                <br>
+
+                <div class="link-card">
+                    <i class="fas fa-globe"></i>
+                    <h3><a href="https://www.jpl.nasa.gov/edu/teach/tag/search/Exoplanets" target="_blank" rel="noopener noreferrer">Jet Propulsion Laboratory STEM Lessons: </a></h3>
+                    <p>This is a repository of educational materials and activities focused on teaching about exoplanets. Find lesson plans, activities, multimedia materials, and other resources that can be used to teach students about exoplanets and the science behind their discovery and study.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

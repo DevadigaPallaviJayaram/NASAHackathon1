@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exoplanet Explorer</title>
+    <link rel="stylesheet" href="exolore.css">
+</head>
+<body>
+    <header>
+        <h1>Discover Exoplanets</h1>
+        <p>Explore different types of exoplanets and their unique characteristics.</p>
+    </header>
+
+    <section class="card-container">
+        <div class="card" onclick="navigateTo('story/gas_giant.html')">
+            <img src="story/exoplanet/gas giant.jpg" alt="Gas Giant">
+            <h2>Gas Giant</h2>
+            <p>Learn about massive planets made primarily of hydrogen and helium.</p>
+        </div>
+        <div class="card" onclick="navigateTo('story/neptunian_planet.html')">
+            <img src="story/exoplanet/neptunian_planet.jpg" alt="Neptunian Planet">
+            <h2>Neptunian Planet</h2>
+            <p>Explore ice giants with deep atmospheres of hydrogen, helium, and other gases.</p>
+        </div>
+        <div class="card" onclick="navigateTo('story/super_earth.html')">
+            <img src="story/exoplanet/super earth.jpg" alt="Super Earth">
+            <h2>Super Earth</h2>
+            <p>Discover rocky worlds larger than Earth but smaller than Uranus or Neptune.</p>
+        </div>
+        <div class="card" onclick="navigateTo('story/terrestrial_planet.html')">
+            <img src="story/exoplanet/terrestrial.jpg" alt="Terrestrial Planet">
+            <h2>Terrestrial Planet</h2>
+            <p>Learn about planets made mostly of rock, with solid surfaces.</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

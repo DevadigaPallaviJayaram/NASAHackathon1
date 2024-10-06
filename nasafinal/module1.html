@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction to Exoplanets - Exoplanet Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        
+            <h1>Exoplanet Explorer - Modules</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modules.html">Modules</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="nav-login-link">Login</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="module-detail">
+            <h2>Module 1: Introduction to Exoplanets</h2>
+            <img src="exo5.jpg" >
+            <h3>Overview</h3>
+            <p>Most of the exoplanets discovered so far are in a relatively small region of our galaxy, the Milky Way. ("Small" meaning within thousands of light-years of our solar system; one light-year equals 5.88 trillion miles, or 9.46 trillion kilometers.) Even the closest known exoplanet to Earth, Proxima Centauri b, is still about 4 light-years away. We know there are more planets than stars in the galaxy.
+
+                By measuring exoplanets’ sizes (diameters) and masses (weights), we can see compositions ranging from rocky (like Earth and Venus) to gas-rich (like Jupiter and Saturn). Some planets may be dominated by water or ice, while others are dominated by iron or carbon. We’ve identified lava worlds covered in molten seas, puffy planets the density of Styrofoam and dense cores of planets still orbiting their stars.</p>
+           <h3>Exoplanet Detail</h3>
+            
+            <p>Exoplanets, or extrasolar planets, are planets that orbit stars outside our solar system. The discovery of exoplanets has revolutionized our understanding of the universe, revealing a diverse array of planetary systems with varying sizes, compositions, and orbital characteristics.</p>
+            <p>Key points covered in this module:</p>
+            <ul>
+                <h3>Definition and significance of exoplanets</h3>
+                <p>The planets beyond our solar system are called “exoplanets,” and they come in a wide variety of sizes, from gas giants larger than Jupiter to small, rocky planets about as big around as Earth or Mars. They can be hot enough to boil metal or locked in deep freeze. They can orbit their stars so tightly that a “year” lasts only a few days; they can orbit two suns at once. Some exoplanets are sunless rogues, wandering through the galaxy in permanent darkness.</p>
+                
+                
+                
+                
+            </ul>
+            <button onclick="location.href='modules.html'" style="background-color:rgb(245, 203, 17);">Back to Modules</button>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exoplanet Explorer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

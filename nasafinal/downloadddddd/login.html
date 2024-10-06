@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="login_style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="login-form">
+            <div class="logo">
+                <!-- Placeholder for your logo -->
+                <img src="logo.png" alt="Logo">
+            </div>
+            <h2>Welcome back !</h2>
+            <p>Enter to get unlimited access to data & information.</p>
+            <form action="#" method="POST">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your mail address" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Enter password" required>
+                    <span class="toggle-password">👁️</span>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox" id="rememberMe">
+                        Remember me
+                    </label>
+                    <a href="#" class="forgot-password">Forgot your password?</a>
+                </div>
+                <button type="submit" class="login-btn">Log In</button>
+                <div class="divider">Or, Login with</div>
+                <button type="button" class="google-login"><i class="fa-brands fa-google"></i>Sign up with Google
+                </button>
+            </form>
+        </div>
+    </div>
+    <script src="login_script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction to Exoplanets - Exoplanet Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        
+            <h1>Exoplanet Explorer - Modules</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modules.html">Modules</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="nav-login-link">Login</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="module-detail">
+            <h1>Module 2: Methods of Detection</h1>
+            <h3>How we find and classify Exoplanets</h3>
+            
+            <p>
+                Since the first confirmation of an exoplanet orbiting a Sun-like star in 1995, and with only a small sampling of our Milky Way galaxy so far surveyed, we’ve already struck many rich veins.
+
+A statistical estimate based on data from NASA’s Kepler Space Telescope revealed that there are more planets than stars in our galaxy. That means there are more than a trillion planets in our galaxy alone, many of them in Earth’s size range.
+
+“Right now we know, for the first time, that small planets are very common,” said Sara Seager, a professor at the Massachusetts Institute of Technology and an exoplanet research pioneer. “It’s phenomenal. We had no way to know that before Kepler. We’ll just say, colloquially: They’re everywhere.
+            </p>
+           <h3>* Radial velocity: Reading the Wobble </h3>
+            
+            <p>The planet discovered in 1995 was a hot, star-hugging gas giant believed to be about half the size of Jupiter. It tugged so hard on its parent star as it raced around in a four-day orbit that the star’s wobbling was obvious to earthly telescopes – once astronomers knew what to look for.Finding this fast-moving gas giant, known as 51 Pegasi b, kicked off what might be called the “classical” period of planet hunting. The early technique of tracking wobbling stars revealed one planet after another, many of them large “hot Jupiters” with tight, blistering orbits.
+
+                The wobble method measures changes in a star’s “radial velocity.” The wavelengths of starlight are alternately squeezed and stretched as a star moves slightly closer, then slightly farther away from us. Those gyrations are caused by gravitational tugs, this way and that, from orbiting planets.
+                </p>
+            <ul>
+                <h3>*Transits: Planets Found in Dips in Light</h3>
+                <p>The Kepler Space Telescope (2009-2018) ushered in what we could call the “modern” era of planet hunting. Kepler settled into an Earth-trailing orbit, then fixed its gaze on a small patch of sky. It stared at that patch for four years.
+
+                    Within that small patch were 150,000 stars. Kepler was waiting to catch tiny dips in the amount of light coming from individual stars, caused by planets crossing in front of them. This is called “transit method.” Once detected, the planet's orbital size can be calculated from the period (how long it takes the planet to circle once around the star) and the mass of the star.
+                    
+                    NASA’s Transiting Exoplanet Survey Satellite, launched in 2018, employs the same technique (it’s in the name, afterall) to survey whole swaths of our sky. Space telescopes like Spitzer and Hubble have been used to discover exoplanets and reveal more information about what they’re like. From mass characterizations to elements in atmospheres to planetary weather maps.
+                    </p>
+                
+                
+                
+                
+            </ul>
+            <button onclick="location.href='modules.html'" style="background-color:rgb(245, 203, 17);">Back to Modules</button>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exoplanet Explorer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

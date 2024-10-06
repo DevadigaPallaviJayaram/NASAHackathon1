@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url('home.jpg'); /* Replace with actual background image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.6); /* Dark transparent overlay */
+  padding: 50px;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1em;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.login-btn {
+  background-color: #1e90ff;
+}
+
+.guest-btn {
+  background-color: #32cd32;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+      font-size: 2em;
+  }
+  
+  p {
+      font-size: 1em;
+  }
+  
+  .buttons {
+      flex-direction: column;
+  }
+
+  button {
+      width: 100%;
+  }
+}

@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0B0F29;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.header-container {
+    padding: 50px 20px;
+    background-color: #10173B;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #FFFFFF;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    margin-top: 15px;
+    color: #AAB3FF;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.badge {
+    background-color: #2F48FB;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.image-container {
+    margin-top: 40px;
+    /* You can add a background image or design similar to the image you provided */
+    background-image: url('story_prompt.webp'); /* Replace with an appropriate image */
+    background-size: cover;
+    height: 300px;
+}
+
+.mission {
+    padding: 50px 20px;
+}
+
+.mission h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.story {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    line-height: 1.6;
+    color: #CCD5FF;
+}
+
+.continue-btn {
+    background-color: #FF8C00;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.continue-btn:hover {
+    background-color: #FFB45E;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .badge {
+        font-size: 0.8rem;
+        padding: 8px 15px;
+    }
+
+    .image-container {
+        height: 200px;
+    }
+
+    .mission h2 {
+        font-size: 1.8rem;
+    }
+
+    .story {
+        font-size: 1rem;
+    }
+
+    .continue-btn {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+}

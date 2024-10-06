@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction to Exoplanets - Exoplanet Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        
+            <h1>Exoplanet Explorer - Modules</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modules.html">Modules</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="nav-login-link">Login</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="module-detail">
+            <h2>Module 5: Goals and Future of NASA's Exoplanet Exploration Program</h2>
+           <p>NASA's Exoplanet Exploration Program is focused on discovering and studying planets beyond our solar system, with a vision that encompasses a variety of goals and future initiatives. Here’s an overview:</p>
+            <h3>Goals of the Exoplanet Exploration Program</h3>
+            <p>Discover Exoplanets: The primary goal is to identify and catalog as many exoplanets as possible, particularly those that are similar in size and temperature to Earth.
+            </p>
+           <h3>Characterize Atmospheres: </h3>
+            
+            <p> Studying the atmospheres of exoplanets to understand their composition, weather patterns, and potential habitability. This includes detecting gases like water vapor, carbon dioxide, and methane.</p>
+           e galaxy in permanent darkness.</p>
+
+           <h3>Identify Potentially Habitable Worlds: </h3>
+           <p>Focusing on planets located in the habitable zone of their stars—where conditions might be right for liquid water and, by extension, life.
+        </p>
+ <h3>Understand Planetary Systems: </h3>
+ <p>Investigating the formation and evolution of planetary systems to learn about the diversity of planetary architectures and conditions that lead to planet formation.
+</p>
+<h3>Search for Biosignatures: </h3>
+<p>Developing methods to detect potential signs of life (biosignatures) in the atmospheres of exoplanets.</p>
+                
+                
+                
+           
+            <button onclick="location.href='modules.html'" style="background-color:rgb(245, 203, 17);">Back to Modules</button>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exoplanet Explorer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction to Exoplanets - Exoplanet Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        
+            <h1>Exoplanet Explorer - Modules</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modules.html">Modules</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="nav-login-link">Login</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="module-detail">
+            <h2>Module 3: Exoplanet Characteristics</h2>
+            
+            <h3>Size and Mass</h3>
+            <p>Gas Giants: These are massive exoplanets similar to Jupiter or Saturn in our solar system. They can be much larger, such as KELT-9b, a "hot Jupiter" with extreme temperatures.
+                Neptunian Planets: These planets are similar in size to Neptune and Uranus. They are often classified as "ice giants" and are typically rich in water, ammonia, and methane.
+                Super-Earths: These are exoplanets larger than Earth but smaller than Neptune, with masses between 2 to 10 Earth masses. Examples include Kepler-452b and K2-131b.
+                Earth-like Planets: These planets are similar in size to Earth and may be rocky. They are of particular interest because they could potentially support life, depending on their distance from their star.</p>
+           <h3>Orbital Characteristics</h3>
+            
+            <p>Orbital Distance: The distance between an exoplanet and its host star can vary greatly. Some planets orbit extremely close to their stars (with orbital periods of just a few days), while others orbit much farther away, taking years or even decades to complete one orbit.
+                Eccentricity: Some exoplanets have highly elliptical orbits, meaning their distance from their star changes significantly over time. This can lead to extreme variations in climate.
+                Orbital Resonances: Some exoplanets are found in resonant orbits with other planets in the same system, where their gravitational interactions create stable orbital patterns.</p>
+            <ul>
+                <h3>Atmosphere</h3>
+                <p>Chemical Composition: Exoplanet atmospheres can vary widely. For instance, the atmosphere of WASP-121b contains glowing water vapor and metals due to its proximity to its star. Others, like HD 189733b, have atmospheres rich in methane, ammonia, and other gases.
+                    Temperature: The temperature of an exoplanet's atmosphere depends on its proximity to its host star. Some exoplanets, like KELT-9b, experience temperatures hotter than many stars, while others, like rogue planets, drift in space without a star and are extremely cold.
+                    Clouds and Hazes: Many exoplanets have clouds made of exotic materials, such as silicates or metal oxides, and can have hazes of complex hydrocarbons.</p>
+                
+                
+                
+                
+            </ul>
+            <button onclick="location.href='modules.html'" style="background-color:rgb(245, 203, 17);">Back to Modules</button>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exoplanet Explorer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

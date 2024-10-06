@@ -1,0 +1,723 @@
+/* style.css */
+
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  background-color: #f1ebeb;
+}
+
+/* Header Styling */
+header {
+  background-color: #1c1c1c;
+  color: rgb(227, 222, 222);
+  padding: 10px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: rgb(7, 7, 7);
+  text-decoration: none;
+  font-size: 1em;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+.auth-buttons button {
+  margin-left: 10px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #f39c12;
+  color: rgb(226, 220, 220);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.auth-buttons button:hover {
+  background-color: #e67e22;
+}
+
+/* Hero Section Styling */
+#hero {
+  background: url('home1.png') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  animation: backgroundMove 30s linear infinite;
+}
+
+@keyframes backgroundMove {
+  0% { background-position: center; }
+  50% { background-position: center center; }
+  100% { background-position: center; }
+}
+
+#hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(28, 28, 28, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+#hero h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  animation: fadeInDown 1s ease-out;
+}
+
+#hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease-out;
+}
+
+#hero button {
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border: none;
+  background-color: #f39c12;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  animation: fadeIn 1s ease-out;
+}
+
+#hero button:hover {
+  background-color: #e67e22;
+}
+
+/* Modules Section Styling */
+#modules {
+  padding: 50px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+#modules h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #333;
+}
+
+.module-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.module-card {
+  background-color: #1c1c1c;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.module-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.module-card i {
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #f39c12;
+}
+
+.module-card h3 {
+  margin: 10px 0;
+  font-size: 1.5em;
+}
+
+.module-card p {
+  margin: 15px 0;
+  font-size: 1em;
+}
+
+.module-card button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #f39c12;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.module-card button:hover {
+  background-color: #e67e22;
+}
+
+/* Feedback Section Styling */
+#feedback {
+  padding: 50px 20px;
+  background-color: #181515;
+  text-align: center;
+}
+
+#feedback h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #eadddd;
+}
+
+.feedback-container {
+  max-width: 600px;
+  margin: auto;
+}
+
+#feedback-form {
+  display: flex;
+  flex-direction: column;
+}
+
+#feedback-form label {
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+#feedback-form input,
+#feedback-form textarea {
+  padding: 10px;
+  border: 1px solid #0e0d0d;
+  border-radius: 5px;
+}
+
+#feedback-form button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background-color: #1c1c1c;
+  color: rgb(236, 226, 226);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#feedback-form button:hover {
+  background-color: #333;
+}
+
+#feedback-success {
+  margin-top: 20px;
+  color: green;
+  font-size: 1.2em;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1c;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Modal Styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none; /* Changed from flex to none */
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+}
+
+.modal.show {
+  display: flex; /* Use flex when modal is shown */
+}
+
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  animation: slideDown 0.5s ease-out;
+}
+
+@keyframes slideDown {
+  from { transform: translateY(-50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content form label {
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.modal-content form input {
+  padding: 10px;
+  border: 1px solid #111010;
+  border-radius: 5px;
+}
+
+.modal-content form button {
+  margin-top: 15px;
+  padding: 10px;
+  border: none;
+  background-color: #1c1c1c;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.modal-content form button:hover {
+  background-color: #333;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .module-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+/* General Reset */
+* 
+  
+.module-detail {
+padding: 20px;
+max-width: 900px; /* Adjust this to control the max width of the section */
+margin: 0 auto;
+text-align: justify;
+}
+
+/* Styling for the image inside the module detail */
+.module-detail img {
+display: block;
+max-width: 100%; /* Ensures the image never exceeds the container width */
+height: auto; /* Maintains the aspect ratio of the image */
+margin: 20px auto; /* Centers the image with some space */
+border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+/* Additional styling to align text */
+.module-detail h2, .module-detail p, .module-detail ul {
+margin-bottom: 20px;
+line-height: 1.6; /* Adjusts line height for better readability */
+}
+
+/* Ensure the module section scales properly on different screen sizes */
+@media (max-width: 768px) {
+.module-detail {
+    width: 90%; /* Adjust width for smaller screens */
+}
+}
+
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000;
+  background: url('back.png') no-repeat center center/cover; ;
+  color: #fff;
+}
+
+.header {
+  background-color: #2a2a2a;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #121111;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+.about-section, .discovery-section, .missions-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.about-section .image-container, .discovery-section .discovery-content {
+  margin-top: 20px;
+}
+
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+  transform: scale(1.1);
+}
+
+.mission-stats {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.stat {
+  margin: 0 30px;
+  text-align: center;
+}
+
+.stat i {
+  font-size: 48px;
+  color: #f39c12;
+}
+
+.mission-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.mission {
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.mission img {
+  width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.mission:hover {
+  transform: scale(1.1);
+}
+
+.mission h3 {
+  margin-top: 10px;
+}
+
+.footer {
+  background-color: #120f0f;
+  padding: 20px;
+  text-align: center;
+}
+
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.modules {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.module {
+  background: #e7f3fe;
+  margin: 15px 0;
+  padding: 15px;
+  border-left: 5px solid #2196F3;
+  border-radius: 4px;
+}
+
+h2 {
+  color: #efe7e7;
+}
+
+h3 {
+  color: #2196F3;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Modal Styles */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(15, 14, 14); 
+  background-color: rgba(17, 14, 14, 0.4); 
+  padding-top: 60px; 
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto; 
+  padding: 20px;
+  border: 1px solid #c5bebe;
+  width: 80%; 
+}
+
+.close-button {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+  color: rgb(8, 7, 7);
+  text-decoration: none;
+  cursor: pointer;
+
+}
+/* --------------------- */
+/*    Custom Overrides   */
+/* --------------------- */
+
+/* 1. Style the main "Login" heading */
+#login-modal .modal-content h2 {
+color: black; /* Change text color to black */
+font-size: 2em; /* Increase font size */
+text-align: center; /* Center the heading */
+margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* 2. Style the "Username" and "Password" labels */
+#login-modal .modal-content form label {
+color: black; /* Change label color to black */
+font-size: 1.2em; /* Increase font size to resemble headings */
+font-weight: bold; /* Make labels bold */
+margin-top: 15px; /* Add space above each label */
+}
+
+/* 3. Style the login button */
+#login-modal .modal-content form button {
+background-color: yellow; /* Change background to yellow */
+color: black; /* Change text color to black */
+border: none; /* Remove any existing borders */
+padding: 12px; /* Increase padding for better clickability */
+font-size: 1em; /* Ensure the text is readable */
+border-radius: 5px; /* Slightly round the corners */
+cursor: pointer; /* Change cursor to pointer on hover */
+transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* 4. Optional: Enhance hover effect for the login button */
+#login-modal .modal-content form button:hover {
+background-color: #ffd700; /* A brighter yellow on hover */
+}
+module-detail{
+
+  padding: 40px 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+
+
+}
+/* General styles for the page */
+body, html {
+margin: 0;
+padding: 0;
+height: 100%;
+}
+
+body {
+font-family: Arial, sans-serif;
+background-color: #f0f0f0;
+color: white;
+}
+
+/* Background image styling */
+#hero {
+background-image: url('home1.png'); /* Replace with your image URL */
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 100vh; /* Full viewport height */
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+text-align: center;
+}
+
+h1, h2 {
+text-align: center;
+}
+
+.container {
+width: 80%;
+margin: 0 auto;
+}
+
+/* Footer styling */
+footer {
+background-color: #333;
+color: white;
+padding: 10px 0;
+text-align: center;
+position: relative;
+bottom: 0;
+width: 100%;
+}
+
+/* Button styles */
+button {
+background-color: #007bff;
+color: white;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #0056b3;
+}
+
+

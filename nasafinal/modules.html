@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modules - Exoplanet Explorer</title>
+    <link rel="stylesheet" href="style.css"> <!-- This is the modules page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Exoplanet Explorer - Modules</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modules.html" class="active">Modules</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" onclick="openLoginModal()">Login</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="modules-section">
+            <h2>Explore Our Modules</h2>
+            <div class="module-container">
+                <!-- Module 1 -->
+                <div class="module-card">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Module 1: Introduction to Exoplanets</h3>
+                    <p>Understand the basics of exoplanets, including their discovery, classification, and significance in modern astronomy.</p>
+                    <button onclick="location.href='module1.html'">Learn More</button>
+                </div>
+                <!-- Module 2 -->
+                <div class="module-card">
+                    <i class="fas fa-search"></i>
+                    <h3>Module 2: Methods of Detection</h3>
+                    <p>Explore the various techniques used by scientists to detect exoplanets, such as the transit method and radial velocity method.</p>
+                    <button onclick="location.href='module2.html'">Learn More</button>
+                </div>
+                <!-- Module 3 -->
+                <div class="module-card">
+                    <i class="fas fa-star"></i>
+                    <h3>Module 3: Exoplanet Characteristics</h3>
+                    <p>Dive into the diverse characteristics of exoplanets, including their atmospheres, compositions, and potential habitability.</p>
+                    <button onclick="location.href='module3.html'">Learn More</button>
+                </div>
+                <!-- Module 4 -->
+                <div class="module-card">
+                    <i class="fas fa-life-ring"></i>
+                    <h3>Module 4: The Search for Habitability</h3>
+                    <p>Investigate the criteria that make a planet habitable and the ongoing search for life beyond Earth.</p>
+                    <button onclick="location.href='module4.html'">Learn More</button>
+                </div>
+                <!-- Module 5 -->
+                <div class="module-card">
+                    <i class="fas fa-rocket"></i>
+                    <h3>Module 5: Goals and Future of NASA's Exoplanet Exploration Program</h3>
+                    <p>Discover upcoming missions and technologies that will advance our understanding of exoplanets and their environments.</p>
+                    <button onclick="location.href='module5.html'">Learn More</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exoplanet Explorer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

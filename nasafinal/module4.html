@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Introduction to Exoplanets - Exoplanet Explorer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+        
+            <h1>Exoplanet Explorer - Modules</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="modules.html">Modules</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#" id="nav-login-link">Login</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button id="login-btn">Login</button>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="module-detail">
+            <h2>Module 4: The Search for Habitability</h2>
+            
+            <h3>What is the Habitable Zone?
+            </h3>
+            <p>The definition of “habitable zone” is the distance from a star at which liquid water could exist on orbiting planets’ surfaces. Habitable zones are also known as Goldilocks’ zones, where conditions might be just right – neither too hot nor too cold – for life.When searching for possibly habitable exoplanets, it helps to start with worlds similar to our own. But what does “similar” mean? Many rocky planets have been detected in Earth’s size-range: a point in favor of possible life. Based on what we’ve observed in our own solar system, large, gaseous worlds like Jupiter seem far less likely to offer habitable conditions. But most of these Earth-sized worlds have been detected orbiting red-dwarf stars; Earth-sized planets in wide orbits around Sun-like stars are much harder to detect.
+
+                And, of course, when talking about habitable exoplanets, we’re really talking about their stars, the dominant force in any planetary system. Habitable zones potentially capable of hosting life-bearing planets are wider for hotter stars. Smaller, dimmer red dwarfs, the most common type in our Milky Way galaxy, have much tighter habitable zones as in the TRAPPIST-1 system. Planets in a red dwarf's comparatively narrow habitable zone, which is very close to the star, are exposed to extreme levels of X-ray and ultraviolet (UV) radiation, which can be up to hundreds of thousands of times more intense than what Earth receives from the Sun.</p>
+           <h3>Where Are We Looking for Life, and Why?</h3>
+            
+            <p>An old joke offers an answer: Asked why, on a dark night, he was looking for his missing car keys beneath a street lamp, the man answered, "because the light's better." Life on other planets might be like nothing on Earth – it could be life as we don't know it. But it makes sense, at least at first, to search for something more familiar. Life as we know it should be easier to find. And "the light's better" in the habitable zone, or the area around a star where planetary surface temperatures could allow the pooling of water.
+
+Other similarities to Earth come into sharper focus in the search for life. Many rocky planets have been detected in Earth’s size-range: a point in favor of possible life. Based on what we’ve observed in our own solar system, large, gaseous worlds like Jupiter seem far less likely to offer habitable conditions. But most of these Earth-sized worlds have been detected orbiting red-dwarf stars; Earth-sized planets in wide orbits around Sun-like stars are much harder to detect. Yet these red-dwarfs have a potentially deadly habit, especially in their younger years: Powerful flares tend to erupt with some frequency from their surfaces. These could sterilize closely orbiting planets where life had only begun to get a toehold. That’s a strike against possible life.
+
+Because our Sun has nurtured life on Earth for nearly 4 billion years, conventional wisdom would suggest that stars like it would be prime candidates in the search for other potentially habitable worlds. G-type yellow stars like our Sun, however, are shorter-lived and less common in our galaxy.
+
+Stars slightly cooler and less luminous than our Sun — called orange dwarfs — are considered by some scientists as potentially better for advanced life. They can burn steadily for tens of billions of years. This opens up a vast timescape for biological evolution to pursue an infinity of experiments for yielding robust life forms. And, for every star like our Sun there are three times as many orange dwarfs in the Milky Way.
+
+K dwarfs, are the true "Goldilocks stars," said Edward Guinan of Villanova University, Villanova, Pennsylvania. "K-dwarf stars are in the 'sweet spot,' with properties intermediate between the rarer, more luminous, but shorter-lived solar-type stars (G stars) and the more numerous red dwarf stars (M stars). The K stars, especially the warmer ones, have the best of all worlds. If you are looking for planets with habitability, the abundance of K stars pump up your chances of finding life."
+
+Exoplanet temperature, size, star type: the galaxy offers up a menu of worlds that echo aspects of our own, yet at the same time are vastly different.</p>
+            
+            <button onclick="location.href='modules.html'" style="background-color:rgb(245, 203, 17);">Back to Modules</button>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Exoplanet Explorer. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Login Modal -->
+    <div id="login-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
